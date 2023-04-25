@@ -1,0 +1,99 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 439
+  ClientWidth = 390
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  object pnlHeader: TPanel
+    Align = Top
+    Padding.Left = 5.000000000000000000
+    Padding.Top = 5.000000000000000000
+    Padding.Right = 5.000000000000000000
+    Padding.Bottom = 5.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Size.Width = 390.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object btnOpenImage: TButton
+      Align = Left
+      Position.X = 5.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 140.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Open Image'
+      OnClick = btnOpenImageClick
+    end
+    object btnClose: TButton
+      Align = Right
+      Position.X = 353.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 32.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'cleareditbutton'
+      TabOrder = 1
+      Text = 'btnClose'
+      OnClick = btnCloseClick
+    end
+    object ComboBox1: TComboBox
+      Align = Client
+      Items.Strings = (
+        'Seleccionar'
+        'Cielo.jpg'
+        'Estrellas.jpg'
+        'Carretera.jpg')
+      ItemIndex = 0
+      Margins.Left = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Size.Width = 198.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+    end
+  end
+  object imgFile: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Align = Client
+    Size.Width = 390.000000000000000000
+    Size.Height = 345.000000000000000000
+    Size.PlatformDefault = False
+    WrapMode = Stretch
+  end
+  object tLruta: TLabel
+    Align = Top
+    StyledSettings = [Family, Style, FontColor]
+    Margins.Left = 5.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Position.X = 5.000000000000000000
+    Position.Y = 72.000000000000000000
+    Size.Width = 385.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 11.000000000000000000
+    Text = 'Ubicaci'#243'n:'
+    TabOrder = 1
+  end
+  object tLnombre: TLabel
+    Align = Top
+    StyledSettings = [Family, Style, FontColor]
+    Margins.Left = 5.000000000000000000
+    Position.X = 5.000000000000000000
+    Position.Y = 55.000000000000000000
+    Size.Width = 385.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 11.000000000000000000
+    Text = 'Nombre: '
+    TabOrder = 2
+  end
+end
